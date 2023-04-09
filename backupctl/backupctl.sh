@@ -34,7 +34,7 @@ BACKUP_NAME="Backup"
 
 # Display the usage of the script
 display_usage() {
-    echo -e "${BLUE}ℹ${NC} Usage: backupcli [command] [...] [options]"
+    echo -e "${BLUE}ℹ${NC} Usage: backupctl [command] [...] [options]"
     echo -e "${BLUE}ℹ${NC} Commands:"
     echo -e "${BLUE}ℹ${NC}   create: Create a backup archive"
     echo -e "${BLUE}ℹ${NC}      full: Create a backup of every source directory"

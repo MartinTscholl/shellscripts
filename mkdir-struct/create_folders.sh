@@ -13,7 +13,7 @@ NC='\033[0m' # No Color
 
 # Display usage
 display_usage() {
-    echo -e "${BLUE}ℹ${NC} Usage: mkdir_struct [options] [folder name]"
+    echo -e "${BLUE}ℹ${NC} Usage: mkdir-struct [options] [folder name]"
     echo -e "${BLUE}ℹ${NC} Options:"
     echo -e "${BLUE}ℹ${NC}   -f, --force - Force the creation of the folder structure even if the folder name is too short"
     echo -e "${BLUE}ℹ${NC}   -s, --src - Create the src and pkgs folders inside the dev folder"

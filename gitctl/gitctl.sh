@@ -1,7 +1,18 @@
 #!/bin/bash
 
+# Color codes
+RED='\033[0;31m'
+YELLOW='\033[0;33m'
+GREEN='\033[0;32m'
+PURPLE='\033[1;35m'
+BLUE='\033[0;34m'
+NC='\033[0m' # No Color
+
+# Icons
+# ✔ ✘ ℹ ⚠ ⚡ ⚙ ❓ ❗
+
 display_usage() {
-    echo -e "${BLUE}ℹ${NC} Usage: gitcli [command] [...]"
+    echo -e "${BLUE}ℹ${NC} Usage: gitctl [command] [...]"
     echo -e "${BLUE}ℹ${NC} Commands:"
     echo -e "${BLUE}ℹ${NC}   update: Updates the git repository with the latest changes"
     echo -e "${BLUE}ℹ${NC}      dotfiles: Updates the dotfiles repository"

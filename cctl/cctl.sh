@@ -11,7 +11,7 @@ NC='\033[0m' # No Color
 # Icons
 # ✔ ✘ ℹ ⚠ ⚡ ⚙ ❓ ❗
 
-TEMPLATE_PATH="$HOME/git/repos/shellscripts/ccli/templates"
+TEMPLATE_PATH="$HOME/git/repos/shellscripts/cctl/templates"
 
 # Check if the script was called with the create argument
 if [ "$1" = "create" ]; then
@@ -76,7 +76,7 @@ if [ "$1" = "create" ]; then
     fi
 else
     # Display usage
-    echo -e "${BLUE}ℹ${NC} Usage: ccli [command] [arguments]"
+    echo -e "${BLUE}ℹ${NC} Usage: cctl [command] [arguments]"
     echo -e "${BLUE}ℹ${NC} Commands:"
     echo -e "${BLUE}ℹ${NC}     create [project name] - Creates a new project"
     echo -e "${BLUE}ℹ${NC}     add [filenames] - Adds a new file to the project"
