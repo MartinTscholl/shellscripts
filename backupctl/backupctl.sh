@@ -12,7 +12,7 @@ NC='\033[0m' # No Color
 # ✔ ✘ ℹ ⚠ ⚡ ⚙ ❓ ❗
 
 # Configuration paths and naming
-CONFIG_PATH=$HOME/git/repos/shellscripts/backupcli/
+CONFIG_PATH=$HOME/git/repos/shellscripts/backupctl/
 CONFIG_FILE=config.ini
 CONFIG_SOURCE_DIRECTORIES="source_directories"
 CONFIG_SCHOOL_SOURCE_DIRECTORIES="school_source_directories"
