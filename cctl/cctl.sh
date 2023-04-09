@@ -11,7 +11,7 @@ NC='\033[0m' # No Color
 # Icons
 # ✔ ✘ ℹ ⚠ ⚡ ⚙ ❓ ❗
 
-TEMPLATE_PATH="$HOME/Documents/etc/shellscripts/ccli/templates"
+TEMPLATE_PATH="$HOME/git/repos/shellscripts/ccli/templates"
 
 # Check if the script was called with the create argument
 if [ "$1" = "create" ]; then
