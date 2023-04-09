@@ -14,7 +14,7 @@ NC='\033[0m' # No Color
 # Configuration paths and naming
 CONFIG_PATH=$HOME/git/repos/shellscripts/backupctl/
 CONFIG_FILE=config.ini
-CONFIG_SOURCE_DIRECTORIES="source_directories"
+CONFIG_SOURCE_DIRECTORIES="full_source_directories"
 CONFIG_SCHOOL_SOURCE_DIRECTORIES="school_source_directories"
 CONFIG_DESTINATION_DIRECTORY="destination_directory"
 CONFIG_EXCLUDE_PATTERNS="exclude_patterns"
@@ -57,7 +57,7 @@ create_backup() {
     # Check if the script was called with the full argument
     if [[ "${args[1]}" = "full" ]]; then
         BACKUP_NAME="Full-Backup"
-        
+ 
         choose_destination "${args[@]}"
         
         # Check if the script was called with the scbkp argument
