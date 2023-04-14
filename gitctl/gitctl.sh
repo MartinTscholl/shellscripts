@@ -37,14 +37,17 @@ update_dotfiles() {
 	"/home/$USER/.config/wallpapers/"
     )
 
+    # change directory to the destination
+    cd "$dest_dir"
+
+    # pull the latest changes from the default remote branch
+    git pull
+
     # loop through the source files and directories, and copy them to the destination
     for file in "${src_files[@]}"
     do
         cp -R "$file" "$dest_dir"
     done
-
-    # change directory to the destination
-    cd "$dest_dir"
 
     # add the files to git and commit with message "update"
     git add .
