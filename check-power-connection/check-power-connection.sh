@@ -26,5 +26,5 @@ while true; do
     prev_value=$curr_value
   fi
 
-  sleep 2
+  sleep 5
 done
