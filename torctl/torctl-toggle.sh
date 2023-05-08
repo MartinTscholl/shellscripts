@@ -9,9 +9,9 @@ fi
 torctl_status=$(sudo torctl status)
 if echo "$torctl_status" | grep  "torctl is started" || echo "$torctl_status" | grep "tor service is: active"; then
 	sudo torctl stop
-	notify-send -u low -t 2750 "TOR disabled"
-	notify-send -u low -t 2750 "WARP disabled"
+	notify-send -u low -t 750 "TOR disabled"
+	notify-send -u low -t 750 "WARP disabled"
 else
 	sudo torctl start
-	notify-send -u low -t 2750 "TOR enabled"
+	notify-send -u low -t 750 "TOR enabled"
 fi

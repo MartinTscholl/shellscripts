@@ -12,6 +12,12 @@ on_connect() {
 
 prev_value=$(cat /sys/class/power_supply/ADP0/online)
 
+if [ "$prev_value " -eq 0 ]; then
+  xbacklight -set 70
+else
+  xbacklight -set 100
+fi
+
 while true; do
   curr_value=$(cat /sys/class/power_supply/ADP0/online)
 
