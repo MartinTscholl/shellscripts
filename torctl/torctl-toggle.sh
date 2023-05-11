@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Check if warp-cli is being used and stop it if it is active
-if warp-cli status | grep "Connected"; then
+if warp-cli status | grep "Connect"; then
 	warp-cli disconnect
 fi
 

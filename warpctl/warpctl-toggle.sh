@@ -7,7 +7,7 @@ if echo "$torctl_status" | grep  "torctl is started" || echo "$torctl_status" | 
 fi
 
 # Toggle warp-cli 
-if warp-cli status | grep "Connected"; then
+if warp-cli status | grep "Connect"; then
 	warp-cli disconnect
 	notify-send -u low -t 750 "WARP disabled"
 	notify-send -u low -t 750 "Tor disabled"
